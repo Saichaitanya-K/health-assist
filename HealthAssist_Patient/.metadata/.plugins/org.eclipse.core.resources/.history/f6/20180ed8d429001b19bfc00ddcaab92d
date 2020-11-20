@@ -1,0 +1,21 @@
+package com.cg.healthassist;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.cg.healthassist.model.Patient;
+
+public class PatientDAOImplTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+	
+	@Test
+	public void test_Persist_GivenPatient() {
+		Patient patient = new Patient("Chaitanya",21,6382963639,"Mars","ABC","123");
+	}
+
+}

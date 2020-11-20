@@ -1,0 +1,21 @@
+
+p	java:S106m"9Replace this use of System.out or System.err by a logger.(€›‘ûÿÿÿÿÿ8¶ĞŞ.H©RMAJORZ
+CODE_SMELL
+‹	java:S135\"YReduce the total number of break and continue statements in this loop to use at most one.(´™„8×È¶‘Ş.HâRMINORZ
+CODE_SMELL
+k	java:S106D"9Replace this use of System.out or System.err by a logger.(ıä§8èÅİ›Ş.HßRMAJORZ
+CODE_SMELL
+k	java:S106^"9Replace this use of System.out or System.err by a logger.(£ÀÏ‰8èÅİ›Ş.H¯RMAJORZ
+CODE_SMELL
+k	java:S106J"9Replace this use of System.out or System.err by a logger.(Ç˜Ø§8ÔÅ÷Ş.HÛRMAJORZ
+CODE_SMELL
+k	java:S106c"9Replace this use of System.out or System.err by a logger.(·©”°8èÅİ›Ş.H±RMAJORZ
+CODE_SMELL
+k	java:S1068"9Replace this use of System.out or System.err by a logger.(áØÍ«8¶ĞŞ.H«RMAJORZ
+CODE_SMELL
+‹	java:S1355"YReduce the total number of break and continue statements in this loop to use at most one.(´™„8èÅİ›Ş.H¥RMINORZ
+CODE_SMELL
+p	java:S106>"9Replace this use of System.out or System.err by a logger.(®è²ºøÿÿÿÿ8èÅİ›Ş.HÖRMAJORZ
+CODE_SMELL
+k	java:S106h"9Replace this use of System.out or System.err by a logger.(Í·şÖ8¶ĞŞ.HÚRMAJORZ
+CODE_SMELL

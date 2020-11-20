@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=HealthAssist/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cg.healthassist.dao{PatientDAO.java[PatientDAO" modifiers="513" timestamp="1605695130406"/>
+    <typeInfo handle="=HealthAssist/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cg.healthassist.service{PatientService.java[PatientService" modifiers="513" timestamp="1605695745355"/>
+    <typeInfo handle="=HealthAssist/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cg.healthassist.dao{DoctorDAO.java[DoctorDAO" modifiers="513" timestamp="1605710127190"/>
+    <typeInfo handle="=HealthAssist/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cg.healthassist.dao{HospitalDAO.java[HospitalDAO" modifiers="513" timestamp="1605710196450"/>
+    <typeInfo handle="=HealthAssist/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.cg.healthassist.dao{MedicalStoreDAO.java[MedicalStoreDAO" modifiers="513" timestamp="1605710285680"/>
+</typeInfoHistroy>

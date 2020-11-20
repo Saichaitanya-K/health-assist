@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PatientDAOImplTest" project="HealthAssist" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="com.cg.healthassist.PatientDAOImplTest" time="6.005">
+    <testcase name="test_Persist_GivenPatient" classname="com.cg.healthassist.PatientDAOImplTest" time="6.005">
+      <error>javax.persistence.PersistenceException: org.hibernate.InstantiationException: No default constructor for entity:  : com.cg.healthassist.model.Patient&#13;
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:154)&#13;
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:200)&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3365)&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3293)&#13;
+	at com.cg.healthassist.daoimpl.PatientDAOImpl.findByPatientId(PatientDAOImpl.java:29)&#13;
+	at com.cg.healthassist.PatientDAOImplTest.test_Persist_GivenPatient(PatientDAOImplTest.java:18)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)&#13;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#13;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#13;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#13;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#13;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#13;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#13;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: org.hibernate.InstantiationException: No default constructor for entity:  : com.cg.healthassist.model.Patient&#13;
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:85)&#13;
+	at org.hibernate.tuple.PojoInstantiator.instantiate(PojoInstantiator.java:105)&#13;
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.instantiate(AbstractEntityTuplizer.java:685)&#13;
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:5117)&#13;
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1580)&#13;
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1564)&#13;
+	at org.hibernate.loader.plan.exec.process.internal.EntityReferenceInitializerImpl.hydrateEntityState(EntityReferenceInitializerImpl.java:249)&#13;
+	at org.hibernate.loader.plan.exec.process.internal.AbstractRowReader.readRow(AbstractRowReader.java:109)&#13;
+	at org.hibernate.loader.plan.exec.internal.EntityLoadQueryDetails$EntityLoaderRowReader.readRow(EntityLoadQueryDetails.java:254)&#13;
+	at org.hibernate.loader.plan.exec.process.internal.ResultSetProcessorImpl.extractResults(ResultSetProcessorImpl.java:124)&#13;
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:105)&#13;
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:197)&#13;
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4379)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:569)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:537)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:332)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:108)&#13;
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)&#13;
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)&#13;
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1168)&#13;
+	at org.hibernate.internal.SessionImpl.fireLoad(SessionImpl.java:1157)&#13;
+	at org.hibernate.internal.SessionImpl.access$2000(SessionImpl.java:197)&#13;
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.doLoad(SessionImpl.java:2795)&#13;
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.lambda$load$1(SessionImpl.java:2776)&#13;
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.perform(SessionImpl.java:2732)&#13;
+	at org.hibernate.internal.SessionImpl$IdentifierLoadAccessImpl.load(SessionImpl.java:2776)&#13;
+	at org.hibernate.internal.SessionImpl.find(SessionImpl.java:3326)&#13;
+	... 26 more&#13;
+&#13;
+</error>
+    </testcase>
+  </testsuite>
+</testrun>

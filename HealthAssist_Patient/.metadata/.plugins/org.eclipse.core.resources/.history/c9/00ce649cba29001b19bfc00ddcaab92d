@@ -1,0 +1,16 @@
+package com.cg.healthassist;
+
+import com.cg.healthassist.util.JPAUtil;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+        JPAUtil obj = new JPAUtil();
+    }
+}

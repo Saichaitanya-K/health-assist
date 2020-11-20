@@ -1,0 +1,46 @@
+package com.cg.healthassist.util;
+import java.util.*;
+
+public class LoginUtil {
+	public static void main(String[] args) throws InvalidException {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Welcome to Life Line Application");
+	System.out.println("1.Sign Up\n2.Sign in");
+	System.out.println("Please enter your choice");
+	String choice = sc.nextLine();
+	if(choice.equalsIgnoreCase("Sign up"))
+	{
+		AuthenticationUtil verify = new AuthenticationUtil();
+		System.out.println("Enter your name : ");
+		String name = sc.nextLine();
+		System.out.println("Enter your age : ");
+		int age = sc.nextInt();
+		System.out.println("Enter your phone number : ");
+		long phoneNumber = sc.nextLong();
+		System.out.println("Enter your address : ");
+		String address = sc.nextLine();
+		sc.nextLine();
+		boolean verificationProcess=false;
+		while(verificationProcess==false) {
+			try{
+				System.out.println("Enter unique username : ");
+				String userName = sc.nextLine();
+				System.out.println("Enter password : ");
+				String password = sc.nextLine();
+				if(userName.isEmpty()) {
+					throw new InvalidException("userName should not be empty");
+				}
+				verificationProcess=verify.verifyUserNamePassword(userName, password);
+			}catch(InvalidException e) {
+				System.out.println(e.getMessage());
+			}
+		}
+	}
+	else {
+		System.out.println("Enter the username : ");
+		String username = sc.nextLine();
+		System.out.println("Enter the password : ");
+		String password = sc.nextLine();
+	}
+	}
+}
