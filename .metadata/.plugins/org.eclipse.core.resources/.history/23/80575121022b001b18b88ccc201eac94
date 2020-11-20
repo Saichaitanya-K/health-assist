@@ -1,0 +1,5 @@
+package com.cg.healthassist.exception;
+
+public class AuthenticationException {
+
+}
